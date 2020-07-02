@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JW4+b81q5hll7KrpzOA3/Hbt24J8w1J617T3c2xz/bGoV+YiaTFx72eEF4ftlfksllAt4pdeWlgg4OvSgsILwQ==",
+  "dgSpecHash": "XuIMyIMbie7GGjI5k2Ru5T8wTFlhFjKDgTH9IIfOj9K1k2y/NOC4Jns9EiX16ry+z/jxLGuAeWfQ+ty8MO4oOA==",
   "success": true,
-  "projectFilePath": "E:\\Atest\\NPOI\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "E:\\Atest\\NPOICLONE\\20200701\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\hangfire.aspnetcore\\1.7.11\\hangfire.aspnetcore.1.7.11.nupkg.sha512",

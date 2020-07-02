@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Atest\\NPOI\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "E:\\Atest\\NPOICLONE\\20200701\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "E:\\Atest\\NPOI\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "E:\\Atest\\NPOICLONE\\20200701\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Atest\\NPOI\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "E:\\Atest\\NPOICLONE\\20200701\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "E:\\Atest\\NPOI\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "E:\\Atest\\NPOICLONE\\20200701\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Atest\\NPOI\\WebApplication1\\WebApplication1\\obj\\",
+        "outputPath": "E:\\Atest\\NPOICLONE\\20200701\\WebApplication1\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
