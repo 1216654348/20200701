@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace WebApplication1.LZModel
+{
+    public partial class GlyjcYhlmzpjyhlmjcjl
+    {
+        public string Id { get; set; }
+        public string Cjrid { get; set; }
+        public DateTime? Cjsj { get; set; }
+        public string Shrid { get; set; }
+        public DateTime? Shsj { get; set; }
+        public sbyte? Shzt { get; set; }
+        public string Shbtgsm { get; set; }
+        public sbyte? Sfkdj { get; set; }
+        public string Djrid { get; set; }
+        public DateTime? Djsj { get; set; }
+        public sbyte? Sfydj { get; set; }
+        public string Shyc { get; set; }
+        public DateTime? Tjsj { get; set; }
+        public string Jzmc { get; set; }
+        public string Bhxys { get; set; }
+        public string Bhxysfswz { get; set; }
+        public string Bhxysms { get; set; }
+        public string Pg { get; set; }
+        public string Bz { get; set; }
+        public string Zplj { get; set; }
+        public string Zpmc { get; set; }
+        public string Txr { get; set; }
+        public DateTime? Txrq { get; set; }
+        public string Rwid { get; set; }
+    }
+}
