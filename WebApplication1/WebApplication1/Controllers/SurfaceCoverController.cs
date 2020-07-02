@@ -38,6 +38,7 @@ namespace WebApplication1.Controllers
             lzjcContext.TLandcover.AddRange(data);
             var result = lzjcContext.SaveChanges();
             var c = 789;
+            var d = 8989;
         }
     }
 }
