@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "XuIMyIMbie7GGjI5k2Ru5T8wTFlhFjKDgTH9IIfOj9K1k2y/NOC4Jns9EiX16ry+z/jxLGuAeWfQ+ty8MO4oOA==",
+  "dgSpecHash": "pdNTCnWySMGXGmS8Y0IG/G/ghz0vwhylrRB7p/oi6TAlzevYtmAYM/2aLE+5KslS84ejLYrcCEDk8+l8Idbh5g==",
   "success": true,
-  "projectFilePath": "E:\\Atest\\NPOICLONE\\20200701\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "E:\\Atest\\NPOI\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\geojson.net\\1.2.19\\geojson.net.1.2.19.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\hangfire.aspnetcore\\1.7.11\\hangfire.aspnetcore.1.7.11.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\hangfire.core\\1.7.11\\hangfire.core.1.7.11.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\hangfire.memorystorage\\1.7.0\\hangfire.memorystorage.1.7.0.nupkg.sha512",

@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using NPOI.SS.Formula.Functions;
+using WebApplication1.Extension;
 using WebApplication1.IService;
 
 namespace WebApplication1.Controllers
@@ -18,11 +19,11 @@ namespace WebApplication1.Controllers
     [ApiController]
     public class ValuesHome1Controller : ControllerBase
     {
-        //private readonly IRepository _repository;
-        //public ValuesHome1Controller(IRepository repository)
-        //{
-        //    this._repository = repository;
-        //}
+        private readonly IRepository _repository;
+        public ValuesHome1Controller(IRepository repository)
+        {
+            this._repository = repository;
+        }
 
         //public string Get()
         //{
@@ -59,6 +60,7 @@ namespace WebApplication1.Controllers
 
         //public string UpdateXcgjJson()
         //{
+        //    //lzjcContext
         //    var c = "";
         //    var path = @"D:\Atest\XcgjJson\";
         //    var glslist = _repository.Current<GlyjcGls>().AsNoTracking().ToList();
@@ -88,20 +90,20 @@ namespace WebApplication1.Controllers
         //    }
         //    _repository.Current<GlyjcGls>().UpdateRange(data);
         //    var result = _repository.SaveChanges();
-        //    return null;
+        //    //return null;
         //}
 
-        ///// <summary>
-        ///// 根据文件名获取人员ID和时间
-        ///// </summary>
-        ///// <param name="filename">文件名(人员ID和巡查时间)及后缀名</param>
-        ///// <returns>人员ID和时间</returns>
-        //public List<string> GetRyidAndRq(string filename)
-        //{
-        //    filename = filename.Replace(".json", "");
-        //    var arr = filename.Split('_').ToList();
-        //    return arr;
-        //}
+        /// <summary>
+        /// 根据文件名获取人员ID和时间
+        /// </summary>
+        /// <param name="filename">文件名(人员ID和巡查时间)及后缀名</param>
+        /// <returns>人员ID和时间</returns>
+        public List<string> GetRyidAndRq(string filename)
+        {
+            filename = filename.Replace(".json", "");
+            var arr = filename.Split('_').ToList();
+            return arr;
+        }
 
         ///// <summary>
         ///// 读取Json文件(并调整经纬度顺序)
@@ -129,55 +131,73 @@ namespace WebApplication1.Controllers
         //    }
         //}
 
-        //#region 保存geo-json
-        ////List<TYcysqdYsm> ycysqdYsms = new List<TYcysqdYsm>();
-        ////var count = 0;
-        //////读取.json文件数据
-        ////using (System.IO.StreamReader file = System.IO.File.OpenText(path))
-        ////{
-        ////    using (JsonTextReader reader = new JsonTextReader(file))
-        ////    {
-        ////        JObject o = (JObject)JToken.ReadFrom(reader);
-        ////        var features = o["features"];//数据
-        ////        foreach (var item in features)
-        ////        {
-        ////            var type = item["type"] + "";//类型
-        ////            var properties = item["properties"];//属性
-        ////            var FID = properties["FID"] + "";
-        ////            var Layer = properties["Layer"] + "";
-        ////            var Name = properties["NAME"] + "";
-        ////            var Shape_Leng = properties["Shape_Leng"] + "";
-        ////            var Shape_Area = properties["Shape_Area"] + "";
-        ////            decimal dData = 0;
-        ////            if (Shape_Area.Contains("E"))
-        ////            {
-        ////                dData = Convert.ToDecimal(Decimal.Parse(Shape_Area, System.Globalization.NumberStyles.Float));
-        ////            }
-        ////            else
-        ////            {
-        ////                decimal.TryParse(Shape_Area, out dData);
-        ////            }
+        public void SaveJson(string path = @"E:\Atest\SHHJ20200706\geojson1.json")
+        {
+            List<LZModel.TShhjCz> shhjs = new List<LZModel.TShhjCz>();
+            var count = 0;
+            //读取.json文件数据
+            using (System.IO.StreamReader file = System.IO.File.OpenText(path))
+            {
+                using (JsonTextReader reader = new JsonTextReader(file))
+                {
+                    JObject o = (JObject)JToken.ReadFrom(reader);
+                    var features = o["features"];//数据
+                    foreach (var item in features)
+                    {
+                        var type = item["type"] + "";//类型
+                        var properties = item["properties"];//属性
+                        var FID = properties["gid"] + "";
+                        var AREA_CODE = properties["AREA_CODE"] + "";
+                        var Name = properties["NAME"] + "";
+                        var Shape_Leng = properties["Shape_Leng"] + "";
+                        var SDM = properties["省代码"] + "";
+                        var ZU = properties["组"] + "";
+                        var HS = properties["户数"] + "";
+                        var RK = properties["人口"] + "";
+                        var NAN = properties["男"] + "";
+                        var NV = properties["女"] + "";
+                        var ZSR = properties["总收入"] + "";
+                        var BZ = properties["备注"] + "";
+                        var Shape_Area = properties["Shape_Area"] + "";
+                        decimal dData = 0;
+                        if (Shape_Area.Contains("E"))
+                        {
+                            dData = Convert.ToDecimal(Decimal.Parse(Shape_Area, System.Globalization.NumberStyles.Float));
+                        }
+                        else
+                        {
+                            decimal.TryParse(Shape_Area, out dData);
+                        }
 
-        ////            var geometry = item["geometry"] + "";
-        ////            if (!string.IsNullOrEmpty(geometry))
-        ////            {
-        ////                geometry = cleanString(geometry);
-        ////            }
-        ////            ycysqdYsms.Add(new TYcysqdYsm() { Id = Guid.NewGuid().ToString(), Fid = FID, Type = type, Layer = Layer, Name = Name, ShapeLeng = Shape_Leng, ShapeArea = dData.ToString(), Geometry = geometry, Rksj = DateTime.Now });
-        ////            count = count + 1;
-        ////            System.Diagnostics.Trace.WriteLine(count + ":" + Layer + ":" + Name);
-        ////            if (count + ":" + Layer + ":" + Name == "77:外城遗址:金家台地群")
-        ////            {
-        ////                var a = 123;
-        ////            }
-        ////        }
-        ////    }
-        ////}
-        ////_repository.Current<TYcysqdYsm>().AddRange(ycysqdYsms);
-        ////var result = _repository.SaveChanges();
-        ////var tr = result > 0;
-        ////return new ResultModel(tr, tr ? "保存成功" : "保存失败", null);
-        //#endregion
+                        //var geometry = item["geometry"] + "";
+                        var geometry = item + "";
+                        if (!string.IsNullOrEmpty(geometry))
+                        {
+                            geometry = new ColumnToNote(_repository).cleanString(geometry);
+                        }
+                        int.TryParse(ZU, out int ZU_TRY);
+                        int.TryParse(HS, out int HS_TRY);
+                        int.TryParse(RK, out int RK_TRY);
+                        int.TryParse(NAN, out int NAN_TRY);
+                        int.TryParse(NV, out int NV_TRY);
+                        decimal.TryParse(ZSR, out decimal ZSR_TRY);
+                        shhjs.Add(new LZModel.TShhjCz() { Id = Guid.NewGuid().ToString(), AreaCode = AREA_CODE, Name = Name, ShapeLeng = Shape_Leng, Provincecode = SDM, ShapeArea = dData.ToString(), Group = ZU_TRY, Households = HS_TRY, Population = RK_TRY, Male = NAN_TRY, Female = NV_TRY, Totalrevenue = ZSR_TRY, Backup = BZ, Geom = geometry, Rksj = DateTime.Now });
+                        //ycysqdYsms.Add(new TYcysqdYsm() { Id = Guid.NewGuid().ToString(), Fid = FID, Type = type, Layer = Layer, Name = Name, ShapeLeng = Shape_Leng, ShapeArea = dData.ToString(), Geometry = geometry, Rksj = DateTime.Now });
+                        //count = count + 1;
+                        //System.Diagnostics.Trace.WriteLine(count + ":" + Layer + ":" + Name);
+                        System.Diagnostics.Trace.WriteLine(Name);
+                        //if (count + ":" + Layer + ":" + Name == "77:外城遗址:金家台地群")
+                        //{
+                        //    var a = 123;
+                        //}
+                    }
+                }
+            }
+            _repository.Current<LZModel.TShhjCz>().AddRange(shhjs);
+            var result = _repository.SaveChanges();
+            //var tr = result > 0;
+            //return new ResultModel(tr, tr ? "保存成功" : "保存失败", null);
+        }
     }
 
 

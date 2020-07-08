@@ -34,7 +34,7 @@ namespace WebApplication1.Extension
             return dt;
         }
 
-        private string cleanString(string str)
+        public string cleanString(string str)
         {
             char[] strArr = str.ToCharArray();
             StringBuilder newStr = new StringBuilder();

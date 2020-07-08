@@ -632,10 +632,12 @@ namespace WebApplication1.LZModel
         public virtual DbSet<TLandcover> TLandcover { get; set; }
         public virtual DbSet<TLandcoverCopy20200702> TLandcoverCopy20200702 { get; set; }
         public virtual DbSet<TLandcoverCopy20200729> TLandcoverCopy20200729 { get; set; }
+        public virtual DbSet<TLandcoverType> TLandcoverType { get; set; }
         public virtual DbSet<TPgZrhjysj> TPgZrhjysj { get; set; }
         public virtual DbSet<TPgZrhjysjMx> TPgZrhjysjMx { get; set; }
         public virtual DbSet<TRcxcZbx> TRcxcZbx { get; set; }
         public virtual DbSet<TShhjCl> TShhjCl { get; set; }
+        public virtual DbSet<TShhjCz> TShhjCz { get; set; }
         public virtual DbSet<TTempCxph> TTempCxph { get; set; }
         public virtual DbSet<TTempFile> TTempFile { get; set; }
         public virtual DbSet<TTempFkhx> TTempFkhx { get; set; }
@@ -17251,6 +17253,11 @@ namespace WebApplication1.LZModel
                     .HasComment("时间范围")
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Tbmj)
+                    .HasColumnName("TBMJ")
+                    .HasColumnType("double(10,4)")
+                    .HasComment("图斑面积");
             });
 
             modelBuilder.Entity<GlyjcJskzygzxjcdtxx>(entity =>
@@ -67786,6 +67793,13 @@ namespace WebApplication1.LZModel
                     .HasColumnType("int(11)")
                     .HasComment("地类数量");
 
+                entity.Property(e => e.Gjdwlb)
+                    .HasColumnName("GJDWLB")
+                    .HasColumnType("varchar(10)")
+                    .HasComment("根级地物类别(1-自然地物，2-人工地物)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
                 entity.Property(e => e.Lsqy)
                     .HasColumnName("LSQY")
                     .HasColumnType("varchar(255)")
@@ -68055,6 +68069,69 @@ namespace WebApplication1.LZModel
                     .HasCollation("utf8_general_ci");
             });
 
+            modelBuilder.Entity<TLandcoverType>(entity =>
+            {
+                entity.ToTable("t_landcover_type");
+
+                entity.HasComment("地表覆盖类别表");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("主键ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjrid)
+                    .HasColumnName("CJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("创建人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Lb)
+                    .HasColumnName("LB")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("类别")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Pid)
+                    .HasColumnName("PID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("父ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.Shrid)
+                    .HasColumnName("SHRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("审核人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shsj)
+                    .HasColumnName("SHSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("审核时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("tinyint(4)")
+                    .HasComment("审核状态");
+            });
+
             modelBuilder.Entity<TPgZrhjysj>(entity =>
             {
                 entity.ToTable("t_pg_zrhjysj");
@@ -68295,6 +68372,100 @@ namespace WebApplication1.LZModel
                     .HasColumnName("SHZT")
                     .HasColumnType("tinyint(4)")
                     .HasComment("审核状态");
+            });
+
+            modelBuilder.Entity<TShhjCz>(entity =>
+            {
+                entity.ToTable("t_shhj_cz");
+
+                entity.HasComment("社会环境-城镇");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("主键ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.AreaCode)
+                    .HasColumnName("AREA_CODE")
+                    .HasColumnType("varchar(20)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Backup)
+                    .HasColumnName("BACKUP")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("备注")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Female)
+                    .HasColumnName("FEMALE")
+                    .HasColumnType("int(11)")
+                    .HasComment("女");
+
+                entity.Property(e => e.Geom)
+                    .HasColumnName("GEOM")
+                    .HasColumnType("mediumtext")
+                    .HasComment("geom")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Group)
+                    .HasColumnName("GROUP")
+                    .HasColumnType("int(11)")
+                    .HasComment("组");
+
+                entity.Property(e => e.Households)
+                    .HasColumnName("HOUSEHOLDS")
+                    .HasColumnType("int(11)")
+                    .HasComment("户数");
+
+                entity.Property(e => e.Male)
+                    .HasColumnName("MALE")
+                    .HasColumnType("int(11)")
+                    .HasComment("男");
+
+                entity.Property(e => e.Name)
+                    .HasColumnName("NAME")
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Population)
+                    .HasColumnName("POPULATION")
+                    .HasColumnType("int(11)")
+                    .HasComment("人口");
+
+                entity.Property(e => e.Provincecode)
+                    .HasColumnName("PROVINCECODE")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("省代码")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.ShapeArea)
+                    .HasColumnName("SHAPE_AREA")
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.ShapeLeng)
+                    .HasColumnName("SHAPE_LENG")
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Totalrevenue)
+                    .HasColumnName("TOTALREVENUE")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("总收入");
             });
 
             modelBuilder.Entity<TTempCxph>(entity =>

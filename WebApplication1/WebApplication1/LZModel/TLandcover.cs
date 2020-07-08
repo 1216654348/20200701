@@ -6,6 +6,7 @@ namespace WebApplication1.LZModel
     public partial class TLandcover
     {
         public string Id { get; set; }
+        public string Gjdwlb { get; set; }
         public string Dlbm { get; set; }
         public string Dlmc { get; set; }
         public string Xlbm { get; set; }

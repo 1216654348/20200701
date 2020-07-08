@@ -8,6 +8,7 @@ E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\WebApplica
 E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\WebApplication1.dll
 E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\WebApplication1.pdb
 E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\AutoMapper.dll
+E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\GeoJSON.Net.dll
 E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Hangfire.AspNetCore.dll
 E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Hangfire.Core.dll
 E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Hangfire.MemoryStorage.dll
@@ -57,7 +58,6 @@ E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\w
 E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache
 E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfoInputs.cache
 E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfo.cs
 E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
