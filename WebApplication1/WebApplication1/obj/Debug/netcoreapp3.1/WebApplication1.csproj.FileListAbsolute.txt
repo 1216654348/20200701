@@ -140,3 +140,4 @@ E:\国信司南\GitHub\Excel\WebApplication1\WebApplication1\obj\Debug\netcoreap
 E:\国信司南\GitHub\Excel\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.dll
 E:\国信司南\GitHub\Excel\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.pdb
 E:\国信司南\GitHub\Excel\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
+E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache

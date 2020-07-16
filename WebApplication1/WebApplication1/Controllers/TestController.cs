@@ -19,12 +19,12 @@ namespace WebApplication1.Controllers
     public class TestController : ControllerBase
     {
         //private readonly IRepository _repository;
-        //private readonly ITimerClass _timerClass;
-        //public TestController(IRepository repository, ITimerClass timerClass)
-        //{
-        //    this._repository = repository;
-        //    _timerClass = timerClass;
-        //}
+        private readonly ITimerClass _timerClass;
+        public TestController(IRepository repository, ITimerClass timerClass)
+        {
+            //this._repository = repository;
+            _timerClass = timerClass;
+        }
         //private static List<AngleDto> _angleDtos = new List<AngleDto>()
         //{
         //    new AngleDto(){Start = 337.6M,End = 22.5M,AngleName = "北"},
@@ -76,16 +76,18 @@ namespace WebApplication1.Controllers
         //    return new string[] { "value1", "value2" };
         //}
 
-        //public void GetT()
-        //{
-        //    System.Timers.Timer timer = new System.Timers.Timer();
-        //    timer.Enabled = true;
-        //    timer.Interval = 1000;
-        //    timer.Start();
-        //    timer.Elapsed += new System.Timers.ElapsedEventHandler(_timerClass.TryNewTasks);
-        //    //_timerClass.TryNewTasks(null, null);
-        //    Console.ReadKey();
-        //}
+        public void GetT()
+        {
+
+
+            System.Timers.Timer timer = new System.Timers.Timer();
+            timer.Enabled = true;
+            timer.Interval = 1000;
+            timer.Start();
+            timer.Elapsed += new System.Timers.ElapsedEventHandler(_timerClass.TryNewTasks);
+            //_timerClass.TryNewTasks(null, null);
+            Console.ReadKey();
+        }
 
 
         //#region

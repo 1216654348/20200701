@@ -34,6 +34,17 @@ namespace WebApplication1.Extension
             return dt;
         }
 
+        public DataTable DtColumnArray(DataTable dt, List<DtatableField> arr)
+        {
+            for (int i = 0; i < dt.Columns.Count; i++)
+            {
+                var name = dt.Columns[i].ColumnName.ToUpper();
+                var comment = arr.Where(e => e.Column.ToUpper() == name).FirstOrDefault()?.Value;
+                dt.Columns[i].ColumnName = string.IsNullOrEmpty(comment) ? name : comment.ToUpper();
+            }
+            return dt;
+        }
+
         public string cleanString(string str)
         {
             char[] strArr = str.ToCharArray();
@@ -57,5 +68,13 @@ namespace WebApplication1.Extension
             return newStr.ToString();
         }
 
+
+
+    }
+
+    public class DtatableField
+    {
+        public string Column { get; set; }
+        public string Value { get; set; }
     }
 }
