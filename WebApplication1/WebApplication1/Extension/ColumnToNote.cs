@@ -16,14 +16,15 @@ namespace WebApplication1.Extension
             _repository = repository;
         }
 
-        public DataTable DtColumnZH(DataTable dt, string DatabaseName, string TableName)
+        public DataTable DtColumnZH(DataTable dt, string DatabaseName, string TableName, List<DataTableColumn> fields = null)
         {
             var sql = $"select COLUMN_NAME,COLUMN_COMMENT from INFORMATION_SCHEMA.COLUMNS where table_name = '{TableName}' and table_schema = '{DatabaseName}'";
             var datatable = _repository.GetDataTableResult(sql);
             if (dt == null && dt.Rows.Count < 1) return dt;
             if (datatable == null && datatable.Rows.Count < 1) return dt;
 
-            var data = datatable.Rows.Cast<DataRow>().Select(e => new { COLUMN_NAME = e["COLUMN_NAME"] + "", COLUMN_COMMENT = e["COLUMN_COMMENT"] + "" }).ToList();
+            var data = datatable.Rows.Cast<DataRow>().Select(e => new DataTableColumn { COLUMN_NAME = e["COLUMN_NAME"] + "", COLUMN_COMMENT = e["COLUMN_COMMENT"] + "" }).ToList();
+            if (fields != null) data.AddRange(fields);
             data = data.Where(e => !string.IsNullOrEmpty(e.COLUMN_NAME) && !string.IsNullOrEmpty(e.COLUMN_COMMENT)).ToList();
             for (int i = 0; i < dt.Columns.Count; i++)
             {
@@ -76,5 +77,12 @@ namespace WebApplication1.Extension
     {
         public string Column { get; set; }
         public string Value { get; set; }
+    }
+
+
+    public class DataTableColumn
+    {
+        public string COLUMN_NAME { get; set; }
+        public string COLUMN_COMMENT { get; set; }
     }
 }

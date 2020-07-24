@@ -99,8 +99,151 @@ namespace WebApplication1.Controllers
         //{
         //}
         //#endregion
+
+        public void Get()
+        {
+            string BusinessJsonStr = "{\"DATA\":[{\"YCDSJID\":\"123456\",\"GLYCBTID\":11030,\"LYJDID\":\"123456\",\"JCSJ\":\"2020-07-22 00:00:00\",\"ZPMC\":null,\"SM\":null,\"TPLJ\":null,\"SCRID\":\"f69d2068-9767-472f-8bb2-a04fa3d8055f\",\"SCSJ\":\"f69d2068-9767-472f-8bb2-a04fa3d8055f\",\"PZRID\":null,\"PZSJ\":null,\"SJMJ\":null,\"FBFW\":null,\"XZCS\":null}],\"FILEPATHLIST\":[{\"YCDSJID\":\"123456\",\"FileID\":\"1c55df07-1def-45c2-8802-2ee23f4841fd\"}]}";
+            var className1 = "WebApplication1.Controllers.HPF_LYYYKGL_KLGFSDXCZP";
+            var className2 = "WebApplication1.Controllers.HPF_LYYYKGL_LYJD";
+            var cType1 = Type.GetType(className1);
+            var cType2 = Type.GetType(className2);
+            var typeMaster = typeof(DockResultDataDataDetailModel<,>);
+            var eType = typeMaster.MakeGenericType(cType1, cType2);
+            var ent = DeserializeJsonToDynamicObject(BusinessJsonStr, eType);
+        }
+
+        public static dynamic DeserializeJsonToDynamicObject(string json, Type t)
+        {
+            JsonSerializer serializer = new JsonSerializer();
+            StringReader sr = new StringReader(json);
+            dynamic o = serializer.Deserialize(new JsonTextReader(sr), t);
+            return o;
+        }
     }
 
+    /// </summary>
+    /// 数据主表+明细表+附件
+    ///  </summary>
+    public class DockResultDataDataDetailModel<T1, T2> where T1 : class where T2 : class
+    {
+        public List<T1> DATA { set; get; }
+        /// <summary>
+        /// 返回结果数据的关联子表
+        /// </summary>
+        public List<T2> DATADETAIL { set; get; }
+        public List<FileInfoEx> FILEPATHLIST { set; get; }
+    }
+
+    public class FileInfoEx
+    {
+        public string FILETYPE { get; set; }
+        public string YCDSJID { get; set; }
+        public string RELATIVEPATH { get; set; }
+        public string FILENAME { get; set; }
+        public string FILEID { get; set; }
+        public string LX { get; set; }
+
+    }
+
+
+    /// <summary>
+    /// 旅游景点_客流高峰时段现场照片
+    /// </summary>
+    public class HPF_LYYYKGL_KLGFSDXCZP
+    {
+        public string ID { get; set; }
+
+        public string LYJDID { get; set; }
+
+        public DateTime? JCSJ { get; set; }
+
+        public string ZPMC { get; set; }
+
+        public string SM { get; set; }
+
+        public string TPLJ { get; set; }
+
+        public string SCRID { get; set; }
+
+        public DateTime? SCSJ { get; set; }
+
+        public string TPGS { get; set; }
+
+        public string PZRID { get; set; }
+
+        public DateTime? PZSJ { get; set; }
+
+        public string CJDZBXX { get; set; }
+
+        public string SJMJ { get; set; }
+
+        public string FBFW { get; set; }
+
+        public string XZCS { get; set; }
+
+        public string SHRID { get; set; }
+
+        public DateTime? SHSJ { get; set; }
+
+        public string SHZT { get; set; }
+
+        public string SHBTGSM { get; set; }
+
+        public string SHYC { get; set; }
+
+        public string YCDSJID { get; set; }
+
+        public DateTime? RKSJ { get; set; }
+        public string GLYCBTID { get; set; }
+    }
+
+    /// <summary>
+    /// 旅游景点
+    /// </summary>
+    public class HPF_LYYYKGL_LYJD
+    {
+
+        public string ID { get; set; }
+
+        public string GLYCBTID { get; set; }
+
+        public string MC { get; set; }
+
+        public string SM { get; set; }
+
+        public double? JD { get; set; }
+
+        public double? WD { get; set; }
+
+        public string XQURL { get; set; }
+
+        public string CJRID { get; set; }
+
+        public DateTime? CJSJ { get; set; }
+        public string WZSM { get; set; }
+
+        public string SHRID { get; set; }
+
+        public DateTime? SHSJ { get; set; }
+
+        public string SHZT { get; set; }
+
+        public string SHBTGSM { get; set; }
+
+        public string SHYC { get; set; }
+
+        public string DJRID { get; set; }
+
+        public DateTime? DJSJ { get; set; }
+
+        public string SFYDJ { get; set; }
+
+        public string YCDSJID { get; set; }
+
+        public DateTime? RKSJ { get; set; }
+        public string YCYSBM { get; set; }
+
+    }
 
 
     public class YcysAndUser

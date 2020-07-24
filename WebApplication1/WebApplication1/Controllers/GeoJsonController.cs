@@ -28,6 +28,71 @@ namespace WebApplication1.Controllers
 
 
         //[HttpGet]
+        //public ActionResult GetQXZ()
+        //{
+        //    var dt = _repository.GetDataTableResult("select a.`JCDID`, a.`JCSJ`, a.`PM25`, a.`CO2`, a.`ZS`, a.`FYLZ`, a.`PH`, a.`GZD`, a.`YF`, a.`DQSD`, a.`TRSD`, a.`FX`, a.`JYZFS`, a.`SZQY`, a.`TRWD`, a.`DQWD`, a.`YL`, a.`YLLJ`, a.`FS`,b.SBMC,b.AZDJD,b.AZDWD from glyjc_jbhj a left join glyjc_sbqd b on a.JCDID=b.ID where jcdid='b27f3cf9-52c6-11e8-a7ba-000c2977b7fd' and JCSJ between '2018-01-01 00:00:00' and '2020-07-17 23:59:59' order by JCSJ desc");
+        //    List<DataTableColumn> dataTableColumns = new List<DataTableColumn>()
+        //    {
+        //        new DataTableColumn() { COLUMN_NAME = "SBMC", COLUMN_COMMENT = "设备名称" },
+        //        new DataTableColumn() { COLUMN_NAME = "AZDJD", COLUMN_COMMENT = "安装点经度" },
+        //        new DataTableColumn() { COLUMN_NAME = "AZDWD", COLUMN_COMMENT = "安装点纬度" }
+        //        };
+        //    dt = new ColumnToNote(_repository).DtColumnZH(dt, "lzjc", "glyjc_jbhj", dataTableColumns);
+        //    var export = ExportExcel.ExportByteDatable(dt, null);
+        //    return File(export, "application/octet-stream", "2018-2020气象站" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".xls");
+        //}
+
+        //[HttpGet]
+        //public ActionResult GetTRSQ()
+        //{
+        //    var dt = _repository.GetDataTableResult("select a.`PARAID`, a.`JCSJ`, a.`JCZ`,b.JCSD,b.JCFX,b.JCZBMC,'老虎岭遗址-土壤墒情' SBMC,'119.907559' AZDJD,'30.418794' AZDWD from glyjc_trsq a left join glyjc_jksjjrpzb b on a.PARAID=b.PARAID where b.SBID='b27f44b5-52c6-11e8-a7ba-000c2977b7fd' and a.JCSJ between '2018-01-01 00:00:00' and '2020-07-17 23:59:59' order by JCSJ desc");
+        //    List<DataTableColumn> dataTableColumns = new List<DataTableColumn>()
+        //    {
+        //        new DataTableColumn() { COLUMN_NAME = "SBMC", COLUMN_COMMENT = "设备名称" },
+        //        new DataTableColumn() { COLUMN_NAME = "AZDJD", COLUMN_COMMENT = "安装点经度" },
+        //        new DataTableColumn() { COLUMN_NAME = "AZDWD", COLUMN_COMMENT = "安装点纬度" },
+        //        new DataTableColumn() { COLUMN_NAME = "JCSD", COLUMN_COMMENT = "监测深度" },
+        //        new DataTableColumn() { COLUMN_NAME = "JCFX", COLUMN_COMMENT = "监测方向" },
+        //        new DataTableColumn() { COLUMN_NAME = "JCZBMC", COLUMN_COMMENT = "监测指标名称" },
+        //        };
+        //    dt = new ColumnToNote(_repository).DtColumnZH(dt, "lzjc", "glyjc_trsq", dataTableColumns);
+        //    var export = ExportExcel.ExportByteDatable(dt, null);
+        //    return File(export, "application/octet-stream", "2018-2020土壤墒情" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".xls");
+        //}
+
+        //[HttpGet]
+        //public ActionResult GetSW()
+        //{
+        //    var dt = _repository.GetDataTableResult("select a.`PARAID`, a.`JCSJ`, a.`JCZ`,b.JCSD,b.JCFX,b.JCZBMC,c.SBMC,c.AZDJD,c.AZDWD from glyjc_shuiwei a left join glyjc_jksjjrpzb b on a.PARAID=b.PARAID left join glyjc_sbqd c on b.SBID=c.ID where b.SBID='b27f3718-52c6-11e8-a7ba-000c2977b7fd' and a.JCSJ between '2018-01-01 00:00:00' and '2020-07-17 23:59:59' order by JCSJ desc");
+        //    List<DataTableColumn> dataTableColumns = new List<DataTableColumn>()
+        //    {
+        //        new DataTableColumn() { COLUMN_NAME = "SBMC", COLUMN_COMMENT = "设备名称" },
+        //        new DataTableColumn() { COLUMN_NAME = "AZDJD", COLUMN_COMMENT = "安装点经度" },
+        //        new DataTableColumn() { COLUMN_NAME = "AZDWD", COLUMN_COMMENT = "安装点纬度" },
+        //        new DataTableColumn() { COLUMN_NAME = "JCSD", COLUMN_COMMENT = "监测深度" },
+        //        new DataTableColumn() { COLUMN_NAME = "JCFX", COLUMN_COMMENT = "监测方向" },
+        //        new DataTableColumn() { COLUMN_NAME = "JCZBMC", COLUMN_COMMENT = "监测指标名称" },
+        //        };
+        //    dt = new ColumnToNote(_repository).DtColumnZH(dt, "lzjc", "glyjc_shuiwei", dataTableColumns);
+        //    var export = ExportExcel.ExportByteDatable(dt, null);
+        //    return File(export, "application/octet-stream", "2018-2020老虎岭遗址-地下水位" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".xls");
+        //}
+
+        //[HttpGet]
+        //public ActionResult GetSZ()
+        //{
+        //    var dt = _repository.GetDataTableResult("select `JCDID`, `JCSJ`, `PH`, `DDL`, `ZD`, `RJY`,b.SBMC,b.AZDJD,b.AZDWD from glyjc_dbssz a left join glyjc_sbqd b on a.JCDID=b.ID where jcdid='b27efc28-52c6-11e8-a7ba-000c2977b7fd111' and JCSJ between '2018-01-01 00:00:00' and '2020-07-17 23:59:59' order by JCSJ desc");
+        //    List<DataTableColumn> dataTableColumns = new List<DataTableColumn>()
+        //    {
+        //        new DataTableColumn() { COLUMN_NAME = "SBMC", COLUMN_COMMENT = "设备名称" },
+        //        new DataTableColumn() { COLUMN_NAME = "AZDJD", COLUMN_COMMENT = "安装点经度" },
+        //        new DataTableColumn() { COLUMN_NAME = "AZDWD", COLUMN_COMMENT = "安装点纬度" },
+        //    };
+        //    dt = new ColumnToNote(_repository).DtColumnZH(dt, "lzjc", "glyjc_dbssz", dataTableColumns);
+        //    var export = ExportExcel.ExportByteDatable(dt, null);
+        //    return File(export, "application/octet-stream", "2018-2020老虎岭遗址-地下水质" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".xls");
+        //}
+        //[HttpGet]
         //public ActionResult Get()
         //{
         //    var sbqd = _repository.Current<LZModel.GlyjcSbqd>().AsNoTracking().ToList();//设备清单
