@@ -9,6 +9,7 @@ namespace WebApplication1.LZModel
         public string Mc { get; set; }
         public string Lx { get; set; }
         public string Ssjd { get; set; }
+        public string Ycqid { get; set; }
         public string Wzms { get; set; }
         public string Fw { get; set; }
         public int? Ryklxxz { get; set; }

@@ -11,6 +11,10 @@ namespace WebApplication1.LZModel
         public string Ms { get; set; }
         public string Pg { get; set; }
         public string Sjfw { get; set; }
+        public double? Tbmj { get; set; }
+        public string Zhqdl { get; set; }
+        public string Zhhdl { get; set; }
+        public string Zhqk { get; set; }
         public string Bz { get; set; }
         public string Cjrid { get; set; }
         public DateTime? Cjsj { get; set; }

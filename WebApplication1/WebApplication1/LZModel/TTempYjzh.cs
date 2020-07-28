@@ -11,6 +11,7 @@ namespace WebApplication1.LZModel
         public string Emergencytype { get; set; }
         public string Longitude { get; set; }
         public string Latitude { get; set; }
+        public string Shzt { get; set; }
         public DateTime? Rksj { get; set; }
     }
 }

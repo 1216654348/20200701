@@ -32,6 +32,7 @@ namespace WebApplication1.LZModel
         public string Xczp { get; set; }
         public string Ewm { get; set; }
         public string Point { get; set; }
+        public string Point25d { get; set; }
         public string Qyid { get; set; }
         public string Lx { get; set; }
         public string Rwid { get; set; }

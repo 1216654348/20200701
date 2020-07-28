@@ -39,6 +39,7 @@ namespace WebApplication1.LZModel
         public string Jcpzst { get; set; }
         public string Dyfjzdm { get; set; }
         public string Jcxtimefield { get; set; }
+        public string Sftjsl { get; set; }
 
         public virtual YsjYwbysj Fj { get; set; }
         public virtual ICollection<YsjYwbysj> InverseFj { get; set; }

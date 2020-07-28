@@ -12,6 +12,7 @@ namespace WebApplication1.LZModel
         public int? Inusesightcarnum { get; set; }
         public int? Remainsightcarnum { get; set; }
         public int? Faultsightcarnum { get; set; }
+        public string Shzt { get; set; }
         public DateTime? Rksj { get; set; }
     }
 }

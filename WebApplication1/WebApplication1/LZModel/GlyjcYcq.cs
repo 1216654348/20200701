@@ -10,6 +10,12 @@ namespace WebApplication1.LZModel
         public string Dtdj { get; set; }
         public double? Jd { get; set; }
         public double? Wd { get; set; }
+        public double? Jd25d { get; set; }
+        public double? Wd25d { get; set; }
+        public decimal? Mj { get; set; }
+        public string Dbxtp { get; set; }
+        public string Dbxsp { get; set; }
+        public string Lmt { get; set; }
         public string Cjrid { get; set; }
         public DateTime? Cjsj { get; set; }
         public string Shrid { get; set; }

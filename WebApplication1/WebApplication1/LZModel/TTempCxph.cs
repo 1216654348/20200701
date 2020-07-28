@@ -9,6 +9,7 @@ namespace WebApplication1.LZModel
         public DateTime? Cjsj { get; set; }
         public string Cllx { get; set; }
         public decimal? Czbl { get; set; }
+        public string Shzt { get; set; }
         public DateTime? Rksj { get; set; }
     }
 }

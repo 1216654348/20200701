@@ -87,7 +87,9 @@ namespace WebApplication1.LZModel
         public virtual DbSet<GlyjcClfmjichusj> GlyjcClfmjichusj { get; set; }
         public virtual DbSet<GlyjcCllzlsglz> GlyjcCllzlsglz { get; set; }
         public virtual DbSet<GlyjcCnsx> GlyjcCnsx { get; set; }
+        public virtual DbSet<GlyjcCnsxCopy20200727> GlyjcCnsxCopy20200727 { get; set; }
         public virtual DbSet<GlyjcCnsxjz> GlyjcCnsxjz { get; set; }
+        public virtual DbSet<GlyjcCnsxjzCopy20200727> GlyjcCnsxjzCopy20200727 { get; set; }
         public virtual DbSet<GlyjcCqqkjl> GlyjcCqqkjl { get; set; }
         public virtual DbSet<GlyjcDbssz> GlyjcDbssz { get; set; }
         public virtual DbSet<GlyjcDhjy> GlyjcDhjy { get; set; }
@@ -319,6 +321,7 @@ namespace WebApplication1.LZModel
         public virtual DbSet<GlyjcYcgzjlCopy> GlyjcYcgzjlCopy { get; set; }
         public virtual DbSet<GlyjcYcq> GlyjcYcq { get; set; }
         public virtual DbSet<GlyjcYcqCopy20200513> GlyjcYcqCopy20200513 { get; set; }
+        public virtual DbSet<GlyjcYcqej> GlyjcYcqej { get; set; }
         public virtual DbSet<GlyjcYcqhcq> GlyjcYcqhcq { get; set; }
         public virtual DbSet<GlyjcYcqhhcqshhjndjcjl> GlyjcYcqhhcqshhjndjcjl { get; set; }
         public virtual DbSet<GlyjcYcsygntjcsj> GlyjcYcsygntjcsj { get; set; }
@@ -497,6 +500,7 @@ namespace WebApplication1.LZModel
         public virtual DbSet<JieruConfigCopy> JieruConfigCopy { get; set; }
         public virtual DbSet<JieruConfigCopy20200622> JieruConfigCopy20200622 { get; set; }
         public virtual DbSet<JieruConfigCopy20200630> JieruConfigCopy20200630 { get; set; }
+        public virtual DbSet<JieruConfigCopy20200709> JieruConfigCopy20200709 { get; set; }
         public virtual DbSet<JieruConfigCopy删掉无用配置之前> JieruConfigCopy删掉无用配置之前 { get; set; }
         public virtual DbSet<JieruDzsj> JieruDzsj { get; set; }
         public virtual DbSet<JieruDzsjCopy> JieruDzsjCopy { get; set; }
@@ -527,6 +531,8 @@ namespace WebApplication1.LZModel
         public virtual DbSet<LeshanParkcrknum> LeshanParkcrknum { get; set; }
         public virtual DbSet<LeshanParkinfo> LeshanParkinfo { get; set; }
         public virtual DbSet<LeshanRlt> LeshanRlt { get; set; }
+        public virtual DbSet<LeshanRltCopy20200709> LeshanRltCopy20200709 { get; set; }
+        public virtual DbSet<LeshanRltCopy20200711> LeshanRltCopy20200711 { get; set; }
         public virtual DbSet<LeshanRykl> LeshanRykl { get; set; }
         public virtual DbSet<LeshanRykl20200622> LeshanRykl20200622 { get; set; }
         public virtual DbSet<LeshanRyklCopy> LeshanRyklCopy { get; set; }
@@ -590,6 +596,7 @@ namespace WebApplication1.LZModel
         public virtual DbSet<PrivsFuncprivsCopy20180919> PrivsFuncprivsCopy20180919 { get; set; }
         public virtual DbSet<PrivsFuncprivsCopy20180927监测数据病害列表调整前> PrivsFuncprivsCopy20180927监测数据病害列表调整前 { get; set; }
         public virtual DbSet<PrivsFuncprivsCopy20181012> PrivsFuncprivsCopy20181012 { get; set; }
+        public virtual DbSet<PrivsFuncprivsCopy20200713> PrivsFuncprivsCopy20200713 { get; set; }
         public virtual DbSet<PrivsFuncprivsCopy3> PrivsFuncprivsCopy3 { get; set; }
         public virtual DbSet<PrivsFuncprivsTmp> PrivsFuncprivsTmp { get; set; }
         public virtual DbSet<PrivsFunctype> PrivsFunctype { get; set; }
@@ -625,6 +632,7 @@ namespace WebApplication1.LZModel
         public virtual DbSet<TJcygzbStaticfilepath> TJcygzbStaticfilepath { get; set; }
         public virtual DbSet<TJcygzbTjZctj> TJcygzbTjZctj { get; set; }
         public virtual DbSet<TJcygzbWdfx> TJcygzbWdfx { get; set; }
+        public virtual DbSet<TJcygzbWdfxDa> TJcygzbWdfxDa { get; set; }
         public virtual DbSet<TJcygzbWdjf> TJcygzbWdjf { get; set; }
         public virtual DbSet<TJcygzbYhzb> TJcygzbYhzb { get; set; }
         public virtual DbSet<TJcygzbZx> TJcygzbZx { get; set; }
@@ -638,17 +646,26 @@ namespace WebApplication1.LZModel
         public virtual DbSet<TRcxcZbx> TRcxcZbx { get; set; }
         public virtual DbSet<TShhjCl> TShhjCl { get; set; }
         public virtual DbSet<TShhjCz> TShhjCz { get; set; }
+        public virtual DbSet<TShhjCzCopy20200707> TShhjCzCopy20200707 { get; set; }
+        public virtual DbSet<TShhjCzsj> TShhjCzsj { get; set; }
         public virtual DbSet<TTempCxph> TTempCxph { get; set; }
         public virtual DbSet<TTempFile> TTempFile { get; set; }
         public virtual DbSet<TTempFkhx> TTempFkhx { get; set; }
+        public virtual DbSet<TTempFkhxCopy20200715> TTempFkhxCopy20200715 { get; set; }
         public virtual DbSet<TTempGgcl> TTempGgcl { get; set; }
         public virtual DbSet<TTempJcsbxx> TTempJcsbxx { get; set; }
         public virtual DbSet<TTempKyjgcs> TTempKyjgcs { get; set; }
+        public virtual DbSet<TTempKyjgcsCopy20200715> TTempKyjgcsCopy20200715 { get; set; }
         public virtual DbSet<TTempKyjgs> TTempKyjgs { get; set; }
+        public virtual DbSet<TTempKyjgsCopy20200714> TTempKyjgsCopy20200714 { get; set; }
+        public virtual DbSet<TTempKyjgsCopy20200715> TTempKyjgsCopy20200715 { get; set; }
         public virtual DbSet<TTempRkll> TTempRkll { get; set; }
+        public virtual DbSet<TTempRkllCopy20200714> TTempRkllCopy20200714 { get; set; }
         public virtual DbSet<TTempYjzh> TTempYjzh { get; set; }
         public virtual DbSet<TTempYkll> TTempYkll { get; set; }
         public virtual DbSet<TTempYqrs> TTempYqrs { get; set; }
+        public virtual DbSet<TTempYqrsCopy20200715> TTempYqrsCopy20200715 { get; set; }
+        public virtual DbSet<TYcgk> TYcgk { get; set; }
         public virtual DbSet<TYcysqdYsm> TYcysqdYsm { get; set; }
         public virtual DbSet<TZrhjQx> TZrhjQx { get; set; }
         public virtual DbSet<TabCategory> TabCategory { get; set; }
@@ -839,6 +856,7 @@ namespace WebApplication1.LZModel
         public virtual DbSet<VSywbWdlysj> VSywbWdlysj { get; set; }
         public virtual DbSet<VTJcygzbJfdhmx> VTJcygzbJfdhmx { get; set; }
         public virtual DbSet<VTJcygzbJfenum> VTJcygzbJfenum { get; set; }
+        public virtual DbSet<VTTempYjzh> VTTempYjzh { get; set; }
         public virtual DbSet<VTempZdjcsjLasttime> VTempZdjcsjLasttime { get; set; }
         public virtual DbSet<VTjxNewestupdatetime> VTjxNewestupdatetime { get; set; }
         public virtual DbSet<VWwbhwxdaWdlysj> VWwbhwxdaWdlysj { get; set; }
@@ -9285,9 +9303,287 @@ namespace WebApplication1.LZModel
                     .HasComment("提交时间");
             });
 
+            modelBuilder.Entity<GlyjcCnsxCopy20200727>(entity =>
+            {
+                entity.ToTable("glyjc_cnsx_copy20200727");
+
+                entity.HasComment("承诺事项");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjrid)
+                    .HasColumnName("CJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("创建人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Cnsxly)
+                    .HasColumnName("CNSXLY")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("承诺事项来源")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.CnsxnrYw)
+                    .HasColumnName("CNSXNR_YW")
+                    .HasColumnType("text")
+                    .HasComment("承诺事项内容_英文")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.CnsxnrZw)
+                    .HasColumnName("CNSXNR_ZW")
+                    .HasColumnType("text")
+                    .HasComment("承诺事项内容_中文")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cnwcsj)
+                    .HasColumnName("CNWCSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("承诺完成时间");
+
+                entity.Property(e => e.Djrid)
+                    .HasColumnName("DJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("对接人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Djsj)
+                    .HasColumnName("DJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("对接时间");
+
+                entity.Property(e => e.Rwid)
+                    .HasColumnName("RWID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("任务ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Sfkdj)
+                    .HasColumnName("SFKDJ")
+                    .HasColumnType("tinyint(4)")
+                    .HasComment("是否可对接");
+
+                entity.Property(e => e.Sfydj)
+                    .HasColumnName("SFYDJ")
+                    .HasColumnType("tinyint(4)")
+                    .HasDefaultValueSql("'0'")
+                    .HasComment("是否已对接");
+
+                entity.Property(e => e.Shbtgsm)
+                    .HasColumnName("SHBTGSM")
+                    .HasColumnType("varchar(500)")
+                    .HasComment("审核不通过说明")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shrid)
+                    .HasColumnName("SHRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("审核人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shsj)
+                    .HasColumnName("SHSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("审核时间");
+
+                entity.Property(e => e.Shyc)
+                    .HasColumnName("SHYC")
+                    .HasColumnType("varchar(200)")
+                    .HasDefaultValueSql("''")
+                    .HasComment("审核游程（记录审核的过程）")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("tinyint(4)")
+                    .HasComment("审核状态（整型）");
+
+                entity.Property(e => e.Sm)
+                    .HasColumnName("SM")
+                    .HasColumnType("text")
+                    .HasComment("说明")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Tjsj)
+                    .HasColumnName("TJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("提交时间");
+            });
+
             modelBuilder.Entity<GlyjcCnsxjz>(entity =>
             {
                 entity.ToTable("glyjc_cnsxjz");
+
+                entity.HasComment("承诺事项进展");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjrid)
+                    .HasColumnName("CJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("创建人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Cnsxid)
+                    .HasColumnName("CNSXID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("承诺事项ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cnsxly)
+                    .HasColumnName("CNSXLY")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("承诺事项来源")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.CnsxnrYw)
+                    .HasColumnName("CNSXNR_YW")
+                    .HasColumnType("text")
+                    .HasComment("承诺事项内容_英文")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.CnsxnrZw)
+                    .HasColumnName("CNSXNR_ZW")
+                    .HasColumnType("text")
+                    .HasComment("承诺事项内容_中文")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cnwcsj)
+                    .HasColumnName("CNWCSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("承诺完成时间");
+
+                entity.Property(e => e.Djrid)
+                    .HasColumnName("DJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("对接人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Djsj)
+                    .HasColumnName("DJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("对接时间");
+
+                entity.Property(e => e.Dwcqkdbysm)
+                    .HasColumnName("DWCQKDBYSM")
+                    .HasColumnType("text")
+                    .HasComment("对完成情况的必要说明")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Mqjz)
+                    .HasColumnName("MQJZ")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("目前进展")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Nf)
+                    .HasColumnName("NF")
+                    .HasColumnType("varchar(10)")
+                    .HasComment("年份")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Rwid)
+                    .HasColumnName("RWID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("任务ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Sfkdj)
+                    .HasColumnName("SFKDJ")
+                    .HasColumnType("tinyint(4)")
+                    .HasComment("是否可对接");
+
+                entity.Property(e => e.Sfydj)
+                    .HasColumnName("SFYDJ")
+                    .HasColumnType("tinyint(4)")
+                    .HasDefaultValueSql("'0'")
+                    .HasComment("是否已对接");
+
+                entity.Property(e => e.Shbtgsm)
+                    .HasColumnName("SHBTGSM")
+                    .HasColumnType("varchar(500)")
+                    .HasComment("审核不通过说明")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shrid)
+                    .HasColumnName("SHRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("审核人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shsj)
+                    .HasColumnName("SHSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("审核时间");
+
+                entity.Property(e => e.Shyc)
+                    .HasColumnName("SHYC")
+                    .HasColumnType("varchar(200)")
+                    .HasDefaultValueSql("''")
+                    .HasComment("审核游程（记录审核的过程）")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("tinyint(4)")
+                    .HasComment("审核状态（整型）");
+
+                entity.Property(e => e.Tjsj)
+                    .HasColumnName("TJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("提交时间");
+
+                entity.Property(e => e.Xgwd)
+                    .HasColumnName("XGWD")
+                    .HasColumnType("varchar(200)")
+                    .HasComment("相关文档")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
+            modelBuilder.Entity<GlyjcCnsxjzCopy20200727>(entity =>
+            {
+                entity.ToTable("glyjc_cnsxjz_copy20200727");
 
                 entity.HasComment("承诺事项进展");
 
@@ -17258,6 +17554,27 @@ namespace WebApplication1.LZModel
                     .HasColumnName("TBMJ")
                     .HasColumnType("double(10,4)")
                     .HasComment("图斑面积");
+
+                entity.Property(e => e.Zhhdl)
+                    .HasColumnName("ZHHDL")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("转换后地类")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Zhqdl)
+                    .HasColumnName("ZHQDL")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("转换前地类")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Zhqk)
+                    .HasColumnName("ZHQK")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("转换情况")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
             });
 
             modelBuilder.Entity<GlyjcJskzygzxjcdtxx>(entity =>
@@ -32481,6 +32798,13 @@ namespace WebApplication1.LZModel
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");
 
+                entity.Property(e => e.Point25d)
+                    .HasColumnName("POINT25D")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("2.5纬坐标")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
                 entity.Property(e => e.Qyid)
                     .HasColumnName("QYID")
                     .HasColumnType("varchar(255)")
@@ -34640,6 +34964,20 @@ namespace WebApplication1.LZModel
                     .HasColumnType("datetime")
                     .HasComment("创建时间");
 
+                entity.Property(e => e.Dbxsp)
+                    .HasColumnName("DBXSP")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("代表性视频")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Dbxtp)
+                    .HasColumnName("DBXTP")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("代表性图片")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
                 entity.Property(e => e.Djrid)
                     .HasColumnName("DJRID")
                     .HasColumnType("varchar(50)")
@@ -34663,12 +35001,28 @@ namespace WebApplication1.LZModel
                     .HasColumnName("JD")
                     .HasComment("经度");
 
+                entity.Property(e => e.Jd25d)
+                    .HasColumnName("JD25D")
+                    .HasComment("经度2.5D");
+
+                entity.Property(e => e.Lmt)
+                    .HasColumnName("LMT")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("立面图")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
                 entity.Property(e => e.Mc)
                     .HasColumnName("MC")
                     .HasColumnType("varchar(50)")
                     .HasComment("名称")
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Mj)
+                    .HasColumnName("MJ")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("面积");
 
                 entity.Property(e => e.Sfkdj)
                     .HasColumnName("SFKDJ")
@@ -34716,6 +35070,10 @@ namespace WebApplication1.LZModel
                 entity.Property(e => e.Wd)
                     .HasColumnName("WD")
                     .HasComment("纬度");
+
+                entity.Property(e => e.Wd25d)
+                    .HasColumnName("WD25D")
+                    .HasComment("纬度2.5D");
             });
 
             modelBuilder.Entity<GlyjcYcqCopy20200513>(entity =>
@@ -34818,6 +35176,122 @@ namespace WebApplication1.LZModel
                 entity.Property(e => e.Wd)
                     .HasColumnName("WD")
                     .HasComment("纬度");
+            });
+
+            modelBuilder.Entity<GlyjcYcqej>(entity =>
+            {
+                entity.ToTable("glyjc_ycqej");
+
+                entity.HasComment("遗产区二级");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjrid)
+                    .HasColumnName("CJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("创建人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Djrid)
+                    .HasColumnName("DJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("对接人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Djsj)
+                    .HasColumnName("DJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("对接时间");
+
+                entity.Property(e => e.Dtdj)
+                    .HasColumnName("DTDJ")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("地图缩放级别")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Jd)
+                    .HasColumnName("JD")
+                    .HasComment("经度");
+
+                entity.Property(e => e.Mc)
+                    .HasColumnName("MC")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("名称")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Sfkdj)
+                    .HasColumnName("SFKDJ")
+                    .HasColumnType("tinyint(4)")
+                    .HasComment("是否可对接");
+
+                entity.Property(e => e.Sfydj)
+                    .HasColumnName("SFYDJ")
+                    .HasColumnType("tinyint(4)")
+                    .HasDefaultValueSql("'0'")
+                    .HasComment("是否已对接");
+
+                entity.Property(e => e.Shbtgsm)
+                    .HasColumnName("SHBTGSM")
+                    .HasColumnType("varchar(500)")
+                    .HasComment("审核不通过说明")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shrid)
+                    .HasColumnName("SHRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("审核人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shsj)
+                    .HasColumnName("SHSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("审核时间");
+
+                entity.Property(e => e.Shyc)
+                    .HasColumnName("SHYC")
+                    .HasColumnType("varchar(200)")
+                    .HasDefaultValueSql("''")
+                    .HasComment("审核游程（记录审核的过程）")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("tinyint(4)")
+                    .HasComment("审核状态（整型）");
+
+                entity.Property(e => e.Wd)
+                    .HasColumnName("WD")
+                    .HasComment("纬度");
+
+                entity.Property(e => e.Ycjz)
+                    .HasColumnName("YCJZ")
+                    .HasColumnType("text")
+                    .HasComment("遗产价值")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Yjycqid)
+                    .HasColumnName("YJYCQID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("一级遗产区ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
             });
 
             modelBuilder.Entity<GlyjcYcqhcq>(entity =>
@@ -41433,6 +41907,13 @@ namespace WebApplication1.LZModel
                     .HasColumnName("WZMS")
                     .HasColumnType("varchar(1000)")
                     .HasComment("位置描述")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Ycqid)
+                    .HasColumnName("YCQID")
+                    .HasColumnType("varchar(500)")
+                    .HasComment("遗产区ID")
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");
             });
@@ -52876,6 +53357,11 @@ namespace WebApplication1.LZModel
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");
 
+                entity.Property(e => e.Datacount)
+                    .HasColumnName("datacount")
+                    .HasColumnType("int(11)")
+                    .HasComment("接入数据量");
+
                 entity.Property(e => e.Fkey)
                     .HasColumnName("fkey")
                     .HasColumnType("varchar(50)")
@@ -53139,6 +53625,114 @@ namespace WebApplication1.LZModel
                     .HasComment("预警数据抓取为位置url")
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Fkey)
+                    .HasColumnName("fkey")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("外键-监测点ID或设备ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Fkeytype)
+                    .HasColumnName("fkeytype")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("外键类别0-设备，1-监测点")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.GrabCycle)
+                    .HasColumnName("grab_cycle")
+                    .HasColumnType("int(11)")
+                    .HasComment("抓取周期（单位：秒）");
+
+                entity.Property(e => e.GrabCycleUnit)
+                    .HasColumnName("grab_cycle_unit")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("抓取周期单位")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.GrabError)
+                    .HasColumnName("grab_error")
+                    .HasColumnType("int(11)")
+                    .HasComment("抓取误差（秒）");
+
+                entity.Property(e => e.GrabMainUrl)
+                    .HasColumnName("grab_main_url")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("数据抓取地址（只有一个抓取url）")
+                    .HasCharSet("utf32")
+                    .HasCollation("utf32_general_ci");
+
+                entity.Property(e => e.GrabType)
+                    .IsRequired()
+                    .HasColumnName("grab_type")
+                    .HasColumnType("varchar(40)")
+                    .HasComment("抓取类型")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.IsActive)
+                    .HasColumnName("is_active")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'0'")
+                    .HasComment("是否启动(0-未启动,1-启动)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.IsStorage)
+                    .HasColumnName("is_storage")
+                    .HasColumnType("tinyint(4)")
+                    .HasComment("是否存库");
+
+                entity.Property(e => e.LastGrabTime)
+                    .HasColumnName("last_grab_time")
+                    .HasColumnType("datetime")
+                    .HasComment("上次抓取时间");
+
+                entity.Property(e => e.ManagerId)
+                    .HasColumnName("manager_id")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("负责人id")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Remark)
+                    .HasColumnName("remark")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("备注")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.RemarkName)
+                    .HasColumnName("remark_name")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("所属名称(自然环境-大屏)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
+            modelBuilder.Entity<JieruConfigCopy20200709>(entity =>
+            {
+                entity.ToTable("jieru_config_copy20200709");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("id")
+                    .HasColumnType("varchar(80)")
+                    .HasComment("主键")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.AlertJudgeUrl)
+                    .HasColumnName("alert_judge_url")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("预警数据抓取为位置url")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Datacount)
+                    .HasColumnName("datacount")
+                    .HasColumnType("int(50)");
 
                 entity.Property(e => e.Fkey)
                     .HasColumnName("fkey")
@@ -56664,6 +57258,236 @@ namespace WebApplication1.LZModel
             modelBuilder.Entity<LeshanRlt>(entity =>
             {
                 entity.ToTable("leshan_rlt");
+
+                entity.HasComment("热力图");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("id")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjrid)
+                    .HasColumnName("CJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("创建人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Djrid)
+                    .HasColumnName("DJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("对接人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Djsj)
+                    .HasColumnName("DJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("对接时间");
+
+                entity.Property(e => e.Jd)
+                    .IsRequired()
+                    .HasColumnName("JD")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("经度")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Jssj)
+                    .HasColumnName("JSSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("监测结束时间");
+
+                entity.Property(e => e.Kssj)
+                    .HasColumnName("KSSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("监测开始时间");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.Rlz)
+                    .HasColumnName("RLZ")
+                    .HasColumnType("int(11)")
+                    .HasComment("热力值");
+
+                entity.Property(e => e.Rwid)
+                    .HasColumnName("RWID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("任务ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Sfkdj)
+                    .HasColumnName("SFKDJ")
+                    .HasColumnType("tinyint(4)")
+                    .HasDefaultValueSql("'0'")
+                    .HasComment("是否可对接");
+
+                entity.Property(e => e.Sfydj)
+                    .HasColumnName("SFYDJ")
+                    .HasColumnType("tinyint(4)")
+                    .HasDefaultValueSql("'0'")
+                    .HasComment("是否已对接");
+
+                entity.Property(e => e.Shrid)
+                    .HasColumnName("SHRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("审核人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shsj)
+                    .HasColumnName("SHSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("审核时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("tinyint(4)")
+                    .HasComment("审核状态");
+
+                entity.Property(e => e.Tjsj)
+                    .HasColumnName("TJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("提交时间");
+
+                entity.Property(e => e.Wd)
+                    .HasColumnName("WD")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("纬度")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
+            modelBuilder.Entity<LeshanRltCopy20200709>(entity =>
+            {
+                entity.ToTable("leshan_rlt_copy20200709");
+
+                entity.HasComment("热力图");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("id")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjrid)
+                    .HasColumnName("CJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("创建人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Djrid)
+                    .HasColumnName("DJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("对接人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Djsj)
+                    .HasColumnName("DJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("对接时间");
+
+                entity.Property(e => e.Jd)
+                    .IsRequired()
+                    .HasColumnName("JD")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("经度")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Jssj)
+                    .HasColumnName("JSSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("监测结束时间");
+
+                entity.Property(e => e.Kssj)
+                    .HasColumnName("KSSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("监测开始时间");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.Rlz)
+                    .HasColumnName("RLZ")
+                    .HasColumnType("int(11)")
+                    .HasComment("热力值");
+
+                entity.Property(e => e.Rwid)
+                    .HasColumnName("RWID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("任务ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Sfkdj)
+                    .HasColumnName("SFKDJ")
+                    .HasColumnType("tinyint(4)")
+                    .HasDefaultValueSql("'0'")
+                    .HasComment("是否可对接");
+
+                entity.Property(e => e.Sfydj)
+                    .HasColumnName("SFYDJ")
+                    .HasColumnType("tinyint(4)")
+                    .HasDefaultValueSql("'0'")
+                    .HasComment("是否已对接");
+
+                entity.Property(e => e.Shrid)
+                    .HasColumnName("SHRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("审核人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shsj)
+                    .HasColumnName("SHSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("审核时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("tinyint(4)")
+                    .HasComment("审核状态");
+
+                entity.Property(e => e.Tjsj)
+                    .HasColumnName("TJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("提交时间");
+
+                entity.Property(e => e.Wd)
+                    .HasColumnName("WD")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("纬度")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
+            modelBuilder.Entity<LeshanRltCopy20200711>(entity =>
+            {
+                entity.ToTable("leshan_rlt_copy20200711");
 
                 entity.HasComment("热力图");
 
@@ -64725,6 +65549,153 @@ namespace WebApplication1.LZModel
                     .HasCollation("utf8_general_ci");
             });
 
+            modelBuilder.Entity<PrivsFuncprivsCopy20200713>(entity =>
+            {
+                entity.ToTable("privs_funcprivs_copy20200713");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("''")
+                    .HasComment("编号")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Args)
+                    .HasColumnName("ARGS")
+                    .HasColumnType("varchar(300)")
+                    .HasComment("操作参数")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Bid)
+                    .HasColumnName("BID")
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Child)
+                    .HasColumnName("CHILD")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("标记(保存时用)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjrid)
+                    .HasColumnName("CJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("创建人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Description)
+                    .HasColumnName("DESCRIPTION")
+                    .HasColumnType("varchar(500)")
+                    .HasComment("说明")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Fid)
+                    .HasColumnName("FID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("树状结构查询的父级ID，左侧、右侧树的根级均为空，子级不为空")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Funcid)
+                    .HasColumnName("FUNCID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("功能编号")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Groupname)
+                    .HasColumnName("GROUPNAME")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("分组名称")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Icon)
+                    .HasColumnName("ICON")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("图标编码")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Indexoforder)
+                    .HasColumnName("INDEXOFORDER")
+                    .HasColumnType("bigint(12)")
+                    .HasComment("排序索引");
+
+                entity.Property(e => e.Label)
+                    .HasColumnName("LABEL")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("名称")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Path)
+                    .HasColumnName("PATH")
+                    .HasColumnType("varchar(255)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Pid)
+                    .HasColumnName("PID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("父级ID（逻辑父级）")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Qxyzl)
+                    .HasColumnName("QXYZL")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("权限验证列")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Route)
+                    .HasColumnName("ROUTE")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("（路由参数）")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Sign)
+                    .HasColumnName("SIGN")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("标记(查询时用)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.State)
+                    .HasColumnName("STATE")
+                    .HasColumnType("varchar(200)")
+                    .HasComment("状态（路由参数）")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Syscode)
+                    .HasColumnName("SYSCODE")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("系统代码")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Type)
+                    .HasColumnName("TYPE")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("类型")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
             modelBuilder.Entity<PrivsFuncprivsCopy3>(entity =>
             {
                 entity.ToTable("privs_funcprivs_copy3");
@@ -66798,6 +67769,11 @@ namespace WebApplication1.LZModel
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");
 
+                entity.Property(e => e.Sjjf)
+                    .HasColumnName("SJJF")
+                    .HasColumnType("int(11)")
+                    .HasComment("实际积分值");
+
                 entity.Property(e => e.Yhm)
                     .HasColumnName("YHM")
                     .HasColumnType("varchar(50)")
@@ -67296,7 +68272,133 @@ namespace WebApplication1.LZModel
                 entity.Property(e => e.Lx)
                     .HasColumnName("LX")
                     .HasColumnType("tinyint(4)")
-                    .HasComment("类型（0-红榜、1-黑榜）");
+                    .HasComment("类型（-1-负面、0-中性、1-正面）");
+
+                entity.Property(e => e.Ms)
+                    .HasColumnName("MS")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("描述")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Myd)
+                    .HasColumnName("MYD")
+                    .HasColumnType("tinyint(4)")
+                    .HasDefaultValueSql("'0'")
+                    .HasComment("满意度");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("入库时间")
+                    .ValueGeneratedOnAddOrUpdate();
+
+                entity.Property(e => e.Shbtgsm)
+                    .HasColumnName("SHBTGSM")
+                    .HasColumnType("varchar(500)")
+                    .HasComment("审核不通过说明")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shrid)
+                    .HasColumnName("SHRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("审核人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shsj)
+                    .HasColumnName("SHSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("审核时间");
+
+                entity.Property(e => e.Shyc)
+                    .HasColumnName("SHYC")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("审核游程")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("tinyint(4)")
+                    .HasDefaultValueSql("'0'")
+                    .HasComment("审核状态");
+
+                entity.Property(e => e.Sjh)
+                    .HasColumnName("SJH")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("手机号")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Wd)
+                    .HasColumnName("WD")
+                    .HasComment("纬度");
+
+                entity.Property(e => e.Wgs84jd)
+                    .HasColumnName("WGS84JD")
+                    .HasComment("WGS84经度");
+
+                entity.Property(e => e.Wgs84wd)
+                    .HasColumnName("WGS84WD")
+                    .HasComment("WGS84纬度");
+
+                entity.Property(e => e.Ycysid)
+                    .HasColumnName("YCYSID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("遗产要素ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Yhm)
+                    .HasColumnName("YHM")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("''")
+                    .HasComment("用户名")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+            });
+
+            modelBuilder.Entity<TJcygzbWdfxDa>(entity =>
+            {
+                entity.ToTable("t_jcygzb_wdfx_da");
+
+                entity.HasComment("我的发现-档案");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Bq)
+                    .HasColumnName("BQ")
+                    .HasColumnType("tinyint(4)")
+                    .HasComment("标签");
+
+                entity.Property(e => e.Cjrid)
+                    .HasColumnName("CJRID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("采集人ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("采集时间");
+
+                entity.Property(e => e.Jd)
+                    .HasColumnName("JD")
+                    .HasComment("经度");
+
+                entity.Property(e => e.Lx)
+                    .HasColumnName("LX")
+                    .HasColumnType("tinyint(4)")
+                    .HasComment("类型（-1-负面、0-中性、1-正面）");
 
                 entity.Property(e => e.Ms)
                     .HasColumnName("MS")
@@ -68290,7 +69392,7 @@ namespace WebApplication1.LZModel
             {
                 entity.ToTable("t_shhj_cl");
 
-                entity.HasComment("车辆监测");
+                entity.HasComment("社会环境-车辆监测");
 
                 entity.HasIndex(e => new { e.Jcdid, e.Jcsj })
                     .HasName("JCDID");
@@ -68393,6 +69495,63 @@ namespace WebApplication1.LZModel
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");
 
+                entity.Property(e => e.Geom)
+                    .HasColumnName("GEOM")
+                    .HasColumnType("mediumtext")
+                    .HasComment("geom")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Name)
+                    .HasColumnName("NAME")
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Provincecode)
+                    .HasColumnName("PROVINCECODE")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("省代码")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.ShapeArea)
+                    .HasColumnName("SHAPE_AREA")
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.ShapeLeng)
+                    .HasColumnName("SHAPE_LENG")
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
+            modelBuilder.Entity<TShhjCzCopy20200707>(entity =>
+            {
+                entity.ToTable("t_shhj_cz_copy20200707");
+
+                entity.HasComment("社会环境-城镇");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("主键ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.AreaCode)
+                    .HasColumnName("AREA_CODE")
+                    .HasColumnType("varchar(20)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
                 entity.Property(e => e.Backup)
                     .HasColumnName("BACKUP")
                     .HasColumnType("varchar(50)")
@@ -68468,6 +69627,69 @@ namespace WebApplication1.LZModel
                     .HasComment("总收入");
             });
 
+            modelBuilder.Entity<TShhjCzsj>(entity =>
+            {
+                entity.ToTable("t_shhj_czsj");
+
+                entity.HasComment("社会环境-城镇数据");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("主键ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Backup)
+                    .HasColumnName("BACKUP")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("备注")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Czid)
+                    .HasColumnName("CZID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("城镇ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Female)
+                    .HasColumnName("FEMALE")
+                    .HasColumnType("int(11)")
+                    .HasComment("女");
+
+                entity.Property(e => e.Group)
+                    .HasColumnName("GROUP")
+                    .HasColumnType("int(11)")
+                    .HasComment("组");
+
+                entity.Property(e => e.Households)
+                    .HasColumnName("HOUSEHOLDS")
+                    .HasColumnType("int(11)")
+                    .HasComment("户数");
+
+                entity.Property(e => e.Male)
+                    .HasColumnName("MALE")
+                    .HasColumnType("int(11)")
+                    .HasComment("男");
+
+                entity.Property(e => e.Population)
+                    .HasColumnName("POPULATION")
+                    .HasColumnType("int(11)")
+                    .HasComment("人口");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.Totalrevenue)
+                    .HasColumnName("TOTALREVENUE")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("总收入");
+            });
+
             modelBuilder.Entity<TTempCxph>(entity =>
             {
                 entity.ToTable("t_temp_cxph");
@@ -68503,6 +69725,14 @@ namespace WebApplication1.LZModel
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("CURRENT_TIMESTAMP")
                     .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
             });
 
             modelBuilder.Entity<TTempFile>(entity =>
@@ -68578,6 +69808,36 @@ namespace WebApplication1.LZModel
                     .HasColumnType("decimal(10,2)")
                     .HasComment("女性游客比例");
 
+                entity.Property(e => e.From19to25)
+                    .HasColumnName("FROM19TO25")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("19-25比例");
+
+                entity.Property(e => e.From26to35)
+                    .HasColumnName("FROM26TO35")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("26-35比例");
+
+                entity.Property(e => e.From36to45)
+                    .HasColumnName("FROM36TO45")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("36-45比例");
+
+                entity.Property(e => e.From46to55)
+                    .HasColumnName("FROM46TO55")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("46-55比例");
+
+                entity.Property(e => e.Gt55)
+                    .HasColumnName("GT55")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment(">55比例");
+
+                entity.Property(e => e.Lt19)
+                    .HasColumnName("LT19")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("<19比例");
+
                 entity.Property(e => e.Malerate)
                     .HasColumnName("MALERATE")
                     .HasColumnType("decimal(10,2)")
@@ -68589,6 +69849,14 @@ namespace WebApplication1.LZModel
                     .HasDefaultValueSql("CURRENT_TIMESTAMP")
                     .HasComment("入库时间");
 
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
                 entity.Property(e => e.Unknownage)
                     .HasColumnName("UNKNOWNAGE")
                     .HasColumnType("decimal(10,2)")
@@ -68598,36 +69866,89 @@ namespace WebApplication1.LZModel
                     .HasColumnName("UNKNOWNRATE")
                     .HasColumnType("decimal(10,2)")
                     .HasComment("未知游客性别比例");
+            });
 
-                entity.Property(e => e._19)
-                    .HasColumnName("<19")
+            modelBuilder.Entity<TTempFkhxCopy20200715>(entity =>
+            {
+                entity.ToTable("t_temp_fkhx_copy20200715");
+
+                entity.HasComment("访客画像(近一周)");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("id")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Femalerate)
+                    .HasColumnName("FEMALERATE")
                     .HasColumnType("decimal(10,2)")
-                    .HasComment("<19比例");
+                    .HasComment("女性游客比例");
 
-                entity.Property(e => e._1925)
-                    .HasColumnName("19-25")
+                entity.Property(e => e.From19to25)
+                    .HasColumnName("FROM19TO25")
                     .HasColumnType("decimal(10,2)")
                     .HasComment("19-25比例");
 
-                entity.Property(e => e._2635)
-                    .HasColumnName("26-35")
+                entity.Property(e => e.From26to35)
+                    .HasColumnName("FROM26TO35")
                     .HasColumnType("decimal(10,2)")
                     .HasComment("26-35比例");
 
-                entity.Property(e => e._3645)
-                    .HasColumnName("36-45")
+                entity.Property(e => e.From36to45)
+                    .HasColumnName("FROM36TO45")
                     .HasColumnType("decimal(10,2)")
                     .HasComment("36-45比例");
 
-                entity.Property(e => e._4655)
-                    .HasColumnName("46-55")
+                entity.Property(e => e.From46to55)
+                    .HasColumnName("FROM46TO55")
                     .HasColumnType("decimal(10,2)")
                     .HasComment("46-55比例");
 
-                entity.Property(e => e._55)
-                    .HasColumnName(">55")
+                entity.Property(e => e.Gt55)
+                    .HasColumnName("GT55")
                     .HasColumnType("decimal(10,2)")
                     .HasComment(">55比例");
+
+                entity.Property(e => e.Lt19)
+                    .HasColumnName("LT19")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("<19比例");
+
+                entity.Property(e => e.Malerate)
+                    .HasColumnName("MALERATE")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("男性游客比例");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Unknownage)
+                    .HasColumnName("UNKNOWNAGE")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("未知年龄比例");
+
+                entity.Property(e => e.Unknownrate)
+                    .HasColumnName("UNKNOWNRATE")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("未知游客性别比例");
             });
 
             modelBuilder.Entity<TTempGgcl>(entity =>
@@ -68680,6 +70001,14 @@ namespace WebApplication1.LZModel
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("CURRENT_TIMESTAMP")
                     .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
             });
 
             modelBuilder.Entity<TTempJcsbxx>(entity =>
@@ -68730,6 +70059,14 @@ namespace WebApplication1.LZModel
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("CURRENT_TIMESTAMP")
                     .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
             });
 
             modelBuilder.Entity<TTempKyjgcs>(entity =>
@@ -68767,6 +70104,59 @@ namespace WebApplication1.LZModel
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("CURRENT_TIMESTAMP")
                     .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
+            modelBuilder.Entity<TTempKyjgcsCopy20200715>(entity =>
+            {
+                entity.ToTable("t_temp_kyjgcs_copy20200715");
+
+                entity.HasComment("客源结构(近一周)城市");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("id")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Bszb)
+                    .HasColumnName("BSZB")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("本省占比");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Dyfb)
+                    .HasColumnName("DYFB")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("地域分布(城市)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
             });
 
             modelBuilder.Entity<TTempKyjgs>(entity =>
@@ -68804,6 +70194,104 @@ namespace WebApplication1.LZModel
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("CURRENT_TIMESTAMP")
                     .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
+            modelBuilder.Entity<TTempKyjgsCopy20200714>(entity =>
+            {
+                entity.ToTable("t_temp_kyjgs_copy20200714");
+
+                entity.HasComment("客源结构(近一周)省");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("id")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Dyfb)
+                    .HasColumnName("DYFB")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("地域分布(省)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Qgzb)
+                    .HasColumnName("QGZB")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("全国占比");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
+            modelBuilder.Entity<TTempKyjgsCopy20200715>(entity =>
+            {
+                entity.ToTable("t_temp_kyjgs_copy20200715");
+
+                entity.HasComment("客源结构(近一周)省");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("id")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Dyfb)
+                    .HasColumnName("DYFB")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("地域分布(省)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Qgzb)
+                    .HasColumnName("QGZB")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("全国占比");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
             });
 
             modelBuilder.Entity<TTempRkll>(entity =>
@@ -68841,6 +70329,59 @@ namespace WebApplication1.LZModel
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("CURRENT_TIMESTAMP")
                     .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
+            modelBuilder.Entity<TTempRkllCopy20200714>(entity =>
+            {
+                entity.ToTable("t_temp_rkll_copy20200714");
+
+                entity.HasComment("入口流量");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("id")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Rkmc)
+                    .HasColumnName("RKMC")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("入口名称")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Rkrsbl)
+                    .HasColumnName("RKRSBL")
+                    .HasColumnType("decimal(10,2)")
+                    .HasComment("入口人数比例");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
             });
 
             modelBuilder.Entity<TTempYjzh>(entity =>
@@ -68894,6 +70435,14 @@ namespace WebApplication1.LZModel
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("CURRENT_TIMESTAMP")
                     .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
             });
 
             modelBuilder.Entity<TTempYkll>(entity =>
@@ -68924,6 +70473,14 @@ namespace WebApplication1.LZModel
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("CURRENT_TIMESTAMP")
                     .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
 
                 entity.Property(e => e.Totalcount)
                     .HasColumnName("TOTALCOUNT")
@@ -68966,6 +70523,98 @@ namespace WebApplication1.LZModel
                     .HasColumnName("RSSL")
                     .HasColumnType("int(11)")
                     .HasComment("热搜数量");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
+            modelBuilder.Entity<TTempYqrsCopy20200715>(entity =>
+            {
+                entity.ToTable("t_temp_yqrs_copy20200715");
+
+                entity.HasComment("舆情热搜");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("id")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.Rsmc)
+                    .HasColumnName("RSMC")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("热搜名称")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Rssl)
+                    .HasColumnName("RSSL")
+                    .HasColumnType("int(11)")
+                    .HasComment("热搜数量");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
+            modelBuilder.Entity<TYcgk>(entity =>
+            {
+                entity.ToTable("t_ycgk");
+
+                entity.HasComment("遗产概况表");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("主键ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.Ycjz)
+                    .HasColumnName("YCJZ")
+                    .HasColumnType("text")
+                    .HasComment("遗产价值")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Ycqid)
+                    .HasColumnName("YCQID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("遗产区ID")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
             });
 
             modelBuilder.Entity<TYcysqdYsm>(entity =>
@@ -76788,6 +78437,32 @@ namespace WebApplication1.LZModel
                     .HasColumnName("SJFW")
                     .HasColumnType("varchar(255)")
                     .HasComment("时间范围")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Tbmj)
+                    .HasColumnName("TBMJ")
+                    .HasColumnType("double(10,4)")
+                    .HasComment("图斑面积");
+
+                entity.Property(e => e.Zhhdl)
+                    .HasColumnName("ZHHDL")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("转换后地类")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Zhqdl)
+                    .HasColumnName("ZHQDL")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("转换前地类")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Zhqk)
+                    .HasColumnName("ZHQK")
+                    .HasColumnType("varchar(255)")
+                    .HasComment("转换情况")
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");
             });
@@ -95044,6 +96719,68 @@ namespace WebApplication1.LZModel
                     .HasColumnType("bigint(20)");
             });
 
+            modelBuilder.Entity<VTTempYjzh>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("v_t_temp_yjzh");
+
+                entity.Property(e => e.Cjsj)
+                    .HasColumnName("CJSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Emergencyindex)
+                    .HasColumnName("EMERGENCYINDEX")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("名称")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Emergencytype)
+                    .IsRequired()
+                    .HasColumnName("EMERGENCYTYPE")
+                    .HasColumnType("varchar(5)")
+                    .HasDefaultValueSql("''")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
+                entity.Property(e => e.Id)
+                    .IsRequired()
+                    .HasColumnName("ID")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("id")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Latitude)
+                    .HasColumnName("LATITUDE")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("纬度")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Longitude)
+                    .HasColumnName("LONGITUDE")
+                    .HasColumnType("varchar(50)")
+                    .HasComment("经度")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Rksj)
+                    .HasColumnName("RKSJ")
+                    .HasColumnType("datetime")
+                    .HasComment("入库时间");
+
+                entity.Property(e => e.Shzt)
+                    .HasColumnName("SHZT")
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'2'")
+                    .HasComment("审核状态")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+            });
+
             modelBuilder.Entity<VTempZdjcsjLasttime>(entity =>
             {
                 entity.HasNoKey();
@@ -101896,6 +103633,13 @@ namespace WebApplication1.LZModel
                     .HasColumnName("SFRWXJC")
                     .HasColumnType("int(1)")
                     .HasComment("是否任务型监测");
+
+                entity.Property(e => e.Sftjsl)
+                    .HasColumnName("SFTJSL")
+                    .HasColumnType("varchar(4)")
+                    .HasComment("是否统计数量")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
 
                 entity.Property(e => e.Sfwjcx)
                     .HasColumnName("SFWJCX")

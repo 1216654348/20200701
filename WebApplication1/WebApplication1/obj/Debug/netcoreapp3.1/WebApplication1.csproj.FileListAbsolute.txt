@@ -60,8 +60,6 @@ E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\w
 E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfoInputs.cache
 E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfo.cs
-E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
-E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
 E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.RazorTargetAssemblyInfo.cache
 E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CopyComplete
 E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication1.StaticWebAssets.Manifest.cache
@@ -141,3 +139,13 @@ E:\国信司南\GitHub\Excel\WebApplication1\WebApplication1\obj\Debug\netcoreap
 E:\国信司南\GitHub\Excel\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.pdb
 E:\国信司南\GitHub\Excel\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
 E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache
+E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Aspose.Words.Pdf2Word.dll
+E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Aspose.Words.dll
+E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\SkiaSharp.dll
+E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSkiaSharp.dylib
+E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\tizen-armel\native\libSkiaSharp.so
+E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\tizen-x86\native\libSkiaSharp.so
+E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\libSkiaSharp.dll
+E:\Atest\NPOI\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\libSkiaSharp.dll
+E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
+E:\Atest\NPOI\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cache

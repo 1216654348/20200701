@@ -10,6 +10,7 @@ namespace WebApplication1.LZModel
         public string Yhm { get; set; }
         public string Sjid { get; set; }
         public int? Enumid { get; set; }
+        public int? Sjjf { get; set; }
         public string Cjrid { get; set; }
         public DateTime? Cjsj { get; set; }
         public string Shrid { get; set; }

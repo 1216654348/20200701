@@ -20,5 +20,6 @@ namespace WebApplication1.LZModel
         public string ManagerId { get; set; }
         public string AlertJudgeUrl { get; set; }
         public sbyte IsStorage { get; set; }
+        public int? Datacount { get; set; }
     }
 }

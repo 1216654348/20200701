@@ -12,6 +12,8 @@ using System.Data;
 using WebApplication1.LZModel;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using Aspose.Words;
+using Aspose.Words.Tables;
 
 namespace WebApplication1.Controllers
 {
@@ -19,12 +21,22 @@ namespace WebApplication1.Controllers
     [ApiController]
     public class GeoJsonController : ControllerBase
     {
-        //public readonly IRepository _repository;
+        public readonly IRepository _repository;
 
-        //public GeoJsonController(IRepository repository)
-        //{
-        //    _repository = repository;
-        //}
+        public GeoJsonController(IRepository repository)
+        {
+            _repository = repository;
+        }
+
+        public void Get()
+        {
+            var c = _repository.Current<GlyjcSbqd>().Select(e => new { e.Id, e.Sbmc }).AsNoTracking().ToList();
+            var json = JsonConvert.SerializeObject(c);
+            var dt = JsonConvert.DeserializeObject<DataTable>(json);
+            new ExportWordEx().FillWordData(dt, null);
+        }
+
+
 
 
         //[HttpGet]

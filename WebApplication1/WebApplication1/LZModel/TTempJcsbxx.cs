@@ -12,6 +12,7 @@ namespace WebApplication1.LZModel
         public int? Remainparknum { get; set; }
         public int? Inuseparknum { get; set; }
         public int? Inusesightcarnum { get; set; }
+        public string Shzt { get; set; }
         public DateTime? Rksj { get; set; }
     }
 }
