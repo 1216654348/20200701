@@ -76,18 +76,18 @@ namespace WebApplication1.Controllers
         //    return new string[] { "value1", "value2" };
         //}
 
-        public void GetT()
-        {
+        //public void GetT()
+        //{
 
 
-            System.Timers.Timer timer = new System.Timers.Timer();
-            timer.Enabled = true;
-            timer.Interval = 1000;
-            timer.Start();
-            timer.Elapsed += new System.Timers.ElapsedEventHandler(_timerClass.TryNewTasks);
-            //_timerClass.TryNewTasks(null, null);
-            Console.ReadKey();
-        }
+        //    System.Timers.Timer timer = new System.Timers.Timer();
+        //    timer.Enabled = true;
+        //    timer.Interval = 1000;
+        //    timer.Start();
+        //    timer.Elapsed += new System.Timers.ElapsedEventHandler(_timerClass.TryNewTasks);
+        //    //_timerClass.TryNewTasks(null, null);
+        //    Console.ReadKey();
+        //}
 
 
         //#region

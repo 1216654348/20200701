@@ -12,6 +12,7 @@ using Newtonsoft.Json.Linq;
 using NPOI.SS.Formula.Functions;
 using WebApplication1.Extension;
 using WebApplication1.IService;
+using WebApplication1.NJCQModel;
 
 namespace WebApplication1.Controllers
 {
@@ -131,72 +132,58 @@ namespace WebApplication1.Controllers
         //    }
         //}
 
-        public void SaveJson(string path = @"E:\Atest\SHHJ20200706\geojson1.json")
+        public void SaveJson(string path = @"E:\Atest\巡查区域Json\巡查区域.json")
         {
-            List<LZModel.TShhjCz> shhjs = new List<LZModel.TShhjCz>();
-            var count = 0;
+            njcwContext njcwContext = new njcwContext();
+            var xcqy = njcwContext.TRcxcqy.AsNoTracking().ToList();
             //读取.json文件数据
             using (System.IO.StreamReader file = System.IO.File.OpenText(path))
             {
-                //using (JsonTextReader reader = new JsonTextReader(file))
-                //{
-                //    JObject o = (JObject)JToken.ReadFrom(reader);
-                //    var features = o["features"];//数据
-                //    foreach (var item in features)
-                //    {
-                //        var type = item["type"] + "";//类型
-                //        var properties = item["properties"];//属性
-                //        var FID = properties["gid"] + "";
-                //        var AREA_CODE = properties["AREA_CODE"] + "";
-                //        var Name = properties["NAME"] + "";
-                //        var Shape_Leng = properties["Shape_Leng"] + "";
-                //        var SDM = properties["省代码"] + "";
-                //        var ZU = properties["组"] + "";
-                //        var HS = properties["户数"] + "";
-                //        var RK = properties["人口"] + "";
-                //        var NAN = properties["男"] + "";
-                //        var NV = properties["女"] + "";
-                //        var ZSR = properties["总收入"] + "";
-                //        var BZ = properties["备注"] + "";
-                //        var Shape_Area = properties["Shape_Area"] + "";
-                //        decimal dData = 0;
-                //        if (Shape_Area.Contains("E"))
-                //        {
-                //            dData = Convert.ToDecimal(Decimal.Parse(Shape_Area, System.Globalization.NumberStyles.Float));
-                //        }
-                //        else
-                //        {
-                //            decimal.TryParse(Shape_Area, out dData);
-                //        }
+                using (JsonTextReader reader = new JsonTextReader(file))
+                {
+                    JObject o = (JObject)JToken.ReadFrom(reader);
+                    var features = o["features"];//数据
+                    foreach (var item in features)
+                    {
+                        var properties = item["properties"];//属性
+                        var Shape_Leng = properties["Shape_Leng"] + "";
+                        var Shape_Area = properties["Shape_Area"] + "";
+                        var name = properties["名称"] + "";//类型
 
-                //        //var geometry = item["geometry"] + "";
-                //        var geometry = item + "";
-                //        if (!string.IsNullOrEmpty(geometry))
-                //        {
-                //            geometry = new ColumnToNote(_repository).cleanString(geometry);
-                //        }
-                //        int.TryParse(ZU, out int ZU_TRY);
-                //        int.TryParse(HS, out int HS_TRY);
-                //        int.TryParse(RK, out int RK_TRY);
-                //        int.TryParse(NAN, out int NAN_TRY);
-                //        int.TryParse(NV, out int NV_TRY);
-                //        decimal.TryParse(ZSR, out decimal ZSR_TRY);
-                //        shhjs.Add(new LZModel.TShhjCz() { Id = Guid.NewGuid().ToString(), AreaCode = AREA_CODE, Name = Name, ShapeLeng = Shape_Leng, Provincecode = SDM, ShapeArea = dData.ToString(), Group = ZU_TRY, Households = HS_TRY, Population = RK_TRY, Male = NAN_TRY, Female = NV_TRY, Totalrevenue = ZSR_TRY, Backup = BZ, Geom = geometry, Rksj = DateTime.Now });
-                //        //ycysqdYsms.Add(new TYcysqdYsm() { Id = Guid.NewGuid().ToString(), Fid = FID, Type = type, Layer = Layer, Name = Name, ShapeLeng = Shape_Leng, ShapeArea = dData.ToString(), Geometry = geometry, Rksj = DateTime.Now });
-                //        //count = count + 1;
-                //        //System.Diagnostics.Trace.WriteLine(count + ":" + Layer + ":" + Name);
-                //        System.Diagnostics.Trace.WriteLine(Name);
-                //        //if (count + ":" + Layer + ":" + Name == "77:外城遗址:金家台地群")
-                //        //{
-                //        //    var a = 123;
-                //        //}
-                //    }
-                //}
+                        decimal dData = 0;
+                        if (Shape_Area.Contains("E"))
+                        {
+                            dData = Convert.ToDecimal(Decimal.Parse(Shape_Area, System.Globalization.NumberStyles.Float));
+                        }
+                        else
+                        {
+                            decimal.TryParse(Shape_Area, out dData);
+                        }
+
+                        var geometry = item + "";
+                        if (!string.IsNullOrEmpty(geometry))
+                        {
+                            geometry = new ColumnToNote(_repository).cleanString(geometry);
+                        }
+                        foreach (var itemxcqy in xcqy)
+                        {
+                            if (name.ToUpper() == itemxcqy.Qymc.ToUpper())
+                            {
+                                itemxcqy.Qyzb = geometry;
+                                itemxcqy.Rksj = DateTime.Now;
+                                break;
+                            }
+                        }
+                        System.Diagnostics.Trace.WriteLine(name);
+                    }
+                }
             }
-            //_repository.Current<LZModel.TShhjCz>().AddRange(shhjs);
-            //var result = _repository.SaveChanges();
-            //var tr = result > 0;
-            //return new ResultModel(tr, tr ? "保存成功" : "保存失败", null);
+            using (njcwContext njcwContexts = new njcwContext())
+            {
+                njcwContext.TRcxcqy.UpdateRange(xcqy);
+                var result = njcwContext.SaveChanges();
+            }
+
         }
     }
 
