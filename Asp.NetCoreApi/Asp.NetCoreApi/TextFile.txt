@@ -1,0 +1,6 @@
+﻿//良渚古城遗址
+Scaffold-DbContext "server=60.191.9.82;userid=lzjc;pwd=lzjc@654321;port=36542;database=lzjc;" Pomelo.EntityFrameworkCore.MySql -OutputDir LZModel -Force
+//127.0.0.1
+Scaffold-DbContext "server=127.0.0.1;userid=root;pwd=password;port=3306;database=lzjc;" Pomelo.EntityFrameworkCore.MySql -OutputDir LocalHostModel
+//南京城墙
+Scaffold-DbContext "server=172.16.100.132;userid=njcw;pwd=njcw@654321;port=3306;database=njcw;" Pomelo.EntityFrameworkCore.MySql -OutputDir NJCQModel -Force
